@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head><title>reCAPTHCA Test</title></head>
+    <body>
+        <canvas id="bcc-canvas"></canvas>
+    </body>
+    <script type="module">
+        import { main } from "./test.js";
+        const canvas = document.getElementById("bcc-canvas");
+        const scrambleSteps = 256;
+        const showHints = true;
+        const debug = false;
+        main(canvas, scrambleSteps, showHints, debug);
+    </script>
+</html>
