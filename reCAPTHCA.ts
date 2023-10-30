@@ -374,6 +374,7 @@ export class BusinessCard {
                 const ctx = tile.getContext("2d")!;
                 ctx.drawImage(wholeCard, borderSize + h * tileSize, borderSize + v * tileSize, tileSize, tileSize, 0, 0, tileSize, tileSize);
                 ctx.strokeStyle = "rgba(80, 80, 80, .4)";
+                ctx.lineWidth = 1.5;
                 ctx.beginPath();
                 ctx.rect(0, 0, tileSize, tileSize);
                 ctx.stroke();
